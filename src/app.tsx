@@ -6,7 +6,7 @@ import {
   onlineManager,
 } from '@tanstack/react-query';
 import Taro, { useDidHide, useDidShow } from '@tarojs/taro';
-import './app.sass';
+import './app.scss';
 
 const queryClient = new QueryClient();
 

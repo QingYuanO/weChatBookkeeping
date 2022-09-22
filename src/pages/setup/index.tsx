@@ -1,7 +1,7 @@
 import { Text, View } from '@tarojs/components';
 import { useReachBottom } from '@tarojs/taro';
 
-import './index.sass';
+import './index.scss';
 
 export default function SetupPage() {
   useReachBottom(() => {
