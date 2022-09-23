@@ -27,6 +27,7 @@
       "@/service/*": ["./src/service/*"],
       "@/pages/*": ["./src/pages/*"],
       "@/types/*": ["./src/types/*"],
+      "@/styles/*": ["./src/styles/*"],
       "@/types": ["./src/types/index"],
     },
     "jsx": "react-jsx",

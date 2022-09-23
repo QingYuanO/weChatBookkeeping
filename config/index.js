@@ -24,6 +24,7 @@ const config = {
     '@/service': path.resolve(__dirname, '..', 'src/service'),
     '@/pages': path.resolve(__dirname, '..', 'src/pages'),
     '@/types': path.resolve(__dirname, '..', 'src/types'),
+    '@/styles': path.resolve(__dirname, '..', 'src/styles'),
   },
   defineConstants: {
   },
