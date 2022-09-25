@@ -1,4 +1,4 @@
-
+@import '@/styles/mixins';
 .index{
-  font-size: 12px * 2;
+   @include eject(position,fixed) 
 }

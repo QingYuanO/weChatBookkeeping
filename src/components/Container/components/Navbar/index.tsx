@@ -1,10 +1,11 @@
 import { Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { Fragment, memo, useMemo } from 'react';
+import { StatusBar } from 'react-native';
 import { getNavBarHeight } from '../../helper';
 import { NavbarProps } from '../../types';
 import DefaultLeftIcon from './defaultLeftIcon';
-import './index.less';
+import './index.scss';
 
 export default memo(function Navbar(props: NavbarProps) {
   const {
@@ -22,6 +23,9 @@ export default memo(function Navbar(props: NavbarProps) {
     if (process.env.TARO_ENV === 'weapp') {
       const menuButtonBounding = Taro.getMenuButtonBoundingClientRect();
       return menuButtonBounding.top;
+    }
+    if(process.env.TARO_ENV === 'rn'){
+      return StatusBar.currentHeight
     }
     if (process.env.TARO_ENV === 'h5') {
       return 5;

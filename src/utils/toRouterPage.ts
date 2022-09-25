@@ -79,3 +79,7 @@ export const toStatisticsPage = (option?: ToRouterType<any>) => {
 export const toSetupPage = (option?: ToRouterType<any>) => {
   navigateType("/pages/setup/index", option);
 };
+
+export const toConsumeDetailPage = (option?: ToRouterType<any>) => {
+  navigateType("/pages/consumeDetail/index", option);
+};

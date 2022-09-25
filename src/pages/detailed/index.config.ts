@@ -1,3 +1,5 @@
 export default definePageConfig({
-  navigationBarTitleText: '首页122',
+  navigationBarTitleText: '记账本',
+  navigationBarBackgroundColor:'#3eb575',
+  navigationBarTextStyle:'white'
 });

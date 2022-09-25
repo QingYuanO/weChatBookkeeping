@@ -1,8 +1,9 @@
+@import '@/styles/mixins';
 .taro-container__footer-wrap{
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  @include eject(position, fixed);
+  @include eject(left, 0);
+  @include eject(bottom, 0);
   width: 100%;
   z-index: 200;
-  box-sizing: border-box;
+  @include eject(box-sizing, border-box);
 }
